@@ -7,7 +7,7 @@ app.use(bodyParser.json());
 
 const N8N_WEBHOOK_URL = "https://ai.pixelprofiteering.com/webhook/oa-tradehook";
 
-app.post("/hook/:id", async (req, res) => {
+app.post("/hook/oa", async (req, res) => {
   console.log("OA webhook received:", req.body);
 
   try {
